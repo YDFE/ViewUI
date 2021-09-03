@@ -376,7 +376,7 @@
             },
             showNotFoundLabel () {
                 const {loading, remote, selectOptions} = this;
-                return selectOptions && selectOptions.length === 0 && (!remote || (remote && !loading));
+                return selectOptions && selectOptions.length === 0 && !loading;
             },
             publicValue(){
                 if (this.labelInValue){
