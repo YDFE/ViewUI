@@ -14,6 +14,9 @@
 ### 4.1.3-yd.2
 - Select: showNotFoundLabel ignore remote prop
 
+### 4.1.3-yd.3
+- Switch&Circle: fix no import when install
+
 > 以下是原文档
 
 <p align="center">
