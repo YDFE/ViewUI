@@ -21,19 +21,19 @@
                             <span v-if="!column.renderHeader" :class="{[prefixCls + '-cell-sort']: column.sortable}" @click="handleSortByHead(getColumn(rowIndex, index)._index)">{{ column.title || '#' }}</span>
                             <render-header v-else :render="column.renderHeader" :column="column" :index="index"></render-header>
                             <span :class="[prefixCls + '-sort']" v-if="column.sortable">
-                                <i class="ivu-icon ivu-icon-md-arrow-dropup" :class="{on: getColumn(rowIndex, index)._sortType === 'asc'}" @click="handleSort(getColumn(rowIndex, index)._index, 'asc')"></i>
-                                <i class="ivu-icon ivu-icon-md-arrow-dropdown" :class="{on: getColumn(rowIndex, index)._sortType === 'desc'}" @click="handleSort(getColumn(rowIndex, index)._index, 'desc')"></i>
+                                <i class="ivu4-icon ivu4-icon-md-arrow-dropup" :class="{on: getColumn(rowIndex, index)._sortType === 'asc'}" @click="handleSort(getColumn(rowIndex, index)._index, 'asc')"></i>
+                                <i class="ivu4-icon ivu4-icon-md-arrow-dropdown" :class="{on: getColumn(rowIndex, index)._sortType === 'desc'}" @click="handleSort(getColumn(rowIndex, index)._index, 'desc')"></i>
                             </span>
                             <Poptip
                                 v-if="isPopperShow(column)"
                                 v-model="getColumn(rowIndex, index)._filterVisible"
                                 placement="bottom"
-                                popper-class="ivu-table-popper"
+                                popper-class="ivu4-table-popper"
                                 transfer
                                 :capture="false"
                                 @on-popper-hide="handleFilterHide(getColumn(rowIndex, index)._index)">
                                 <span :class="[prefixCls + '-filter']">
-                                    <i class="ivu-icon ivu-icon-ios-funnel" :class="{on: getColumn(rowIndex, index)._isFiltered}"></i>
+                                    <i class="ivu4-icon ivu4-icon-ios-funnel" :class="{on: getColumn(rowIndex, index)._isFiltered}"></i>
                                 </span>
 
                                 <div slot="content" :class="[prefixCls + '-filter-list']" v-if="getColumn(rowIndex, index)._filterMultiple">
@@ -63,7 +63,7 @@
                     </div>
                     <div
                         v-if="column.resizable"
-                        class="ivu-table-header-resizable"
+                        class="ivu4-table-header-resizable"
                         @mousedown="handleMouseDown(column, $event)"
                         @mousemove="handleMouseMove(column, $event)"
                         @mouseout="handleMouseOut"
@@ -267,7 +267,7 @@
                     const table = this.$parent;
                     const tableEl = table.$el;
                     const tableLeft = tableEl.getBoundingClientRect().left;
-                    const columnEl = this.$el.querySelector(`th.ivu-table-column-${column.__id}`);
+                    const columnEl = this.$el.querySelector(`th.ivu4-table-column-${column.__id}`);
                     const columnRect = columnEl.getBoundingClientRect();
                     const minLeft = columnRect.left - tableLeft + 30;
 

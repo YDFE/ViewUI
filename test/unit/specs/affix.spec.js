@@ -40,12 +40,12 @@ describe('Affix.vue', () => {
     const affix = vm.$el.children[0].children[0];
     const fakeBlock = vm.$el.children[0].children[1];
 
-    expect(affix.classList.contains('ivu-affix')).to.false;
+    expect(affix.classList.contains('ivu4-affix')).to.false;
     expect(affix.style.top).to.equal('');
     expect(fakeBlock.style.display).to.equal('none');
     window.scrollTo(0, 10000);
     setTimeout(()=>{
-      expect(affix.classList.contains('ivu-affix')).to.true;
+      expect(affix.classList.contains('ivu4-affix')).to.true;
       expect(affix.style.top).to.equal('20px');
       expect(fakeBlock.style.display).to.equal('');
       done();
@@ -64,17 +64,17 @@ describe('Affix.vue', () => {
     `, true);
     const affix = vm.$el.children[1].children[0];
 
-    expect(affix.classList.contains('ivu-affix')).to.false;
+    expect(affix.classList.contains('ivu4-affix')).to.false;
     expect(affix.style.bottom).to.equal('');
     // Affix component haven't run handleScroll function when component mounted in real dom.
     // use scrollTo() to trigger scroll event.
     window.scrollTo(0, 100);
     setTimeout(()=>{
-      expect(affix.classList.contains('ivu-affix')).to.true;
+      expect(affix.classList.contains('ivu4-affix')).to.true;
       expect(affix.style.bottom).to.equal('20px');
       window.scrollTo(0, 10000);
       setTimeout(()=>{
-        expect(affix.classList.contains('ivu-affix')).to.false;
+        expect(affix.classList.contains('ivu4-affix')).to.false;
         expect(affix.style.bottom).to.equal('');
         done();
       }, 100);
@@ -93,17 +93,17 @@ describe('Affix.vue', () => {
     `, true);
     const affix = vm.$el.children[1].children[0];
 
-    expect(affix.classList.contains('ivu-affix')).to.false;
+    expect(affix.classList.contains('ivu4-affix')).to.false;
     expect(affix.style.bottom).to.equal('');
     // Affix component haven't run handleScroll function when component mounted in real dom.
     // use scrollTo() to trigger scroll event.
     window.scrollTo(0, 100);
     setTimeout(()=>{
-      expect(affix.classList.contains('ivu-affix')).to.true;
+      expect(affix.classList.contains('ivu4-affix')).to.true;
       expect(affix.style.bottom).to.equal('20px');
       window.scrollTo(0, 10000);
       setTimeout(()=>{
-        expect(affix.classList.contains('ivu-affix')).to.false;
+        expect(affix.classList.contains('ivu4-affix')).to.false;
         expect(affix.style.bottom).to.equal('');
         done();
       }, 100);
@@ -122,12 +122,12 @@ describe('Affix.vue', () => {
     const affix = vm.$el.children[0].children[0];
     const fakeBlock = vm.$el.children[0].children[1];
     
-    expect(affix.classList.contains('ivu-affix')).to.false;
+    expect(affix.classList.contains('ivu4-affix')).to.false;
     expect(affix.style.top).to.equal('');
     expect(fakeBlock.style.display).to.equal('none');
     window.scrollTo(0, 10000);
     setTimeout(()=>{
-      expect(affix.classList.contains('ivu-affix')).to.true;
+      expect(affix.classList.contains('ivu4-affix')).to.true;
       expect(affix.style.top).to.equal('0px');
       expect(fakeBlock.style.display).to.equal('');
       done();

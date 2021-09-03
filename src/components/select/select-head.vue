@@ -6,13 +6,13 @@
             </slot>
         </span>
         <div
-            class="ivu-tag ivu-tag-checked"
+            class="ivu4-tag ivu4-tag-checked"
             v-for="(item, index) in selectedMultiple"
             v-if="maxTagCount === undefined || index < maxTagCount">
-            <span class="ivu-tag-text">{{ item.tag !== undefined ? item.tag : item.label }}</span>
+            <span class="ivu4-tag-text">{{ item.tag !== undefined ? item.tag : item.label }}</span>
             <Icon type="ios-close" @click.native.stop="removeTag(item)"></Icon>
-        </div><div class="ivu-tag ivu-tag-checked" v-if="maxTagCount !== undefined && selectedMultiple.length > maxTagCount">
-            <span class="ivu-tag-text ivu-select-max-tag">
+        </div><div class="ivu4-tag ivu4-tag-checked" v-if="maxTagCount !== undefined && selectedMultiple.length > maxTagCount">
+            <span class="ivu4-tag-text ivu4-select-max-tag">
                 <template v-if="maxTagPlaceholder">{{ maxTagPlaceholder(selectedMultiple.length - maxTagCount) }}</template>
                 <template v-else>+ {{ selectedMultiple.length - maxTagCount }}...</template>
             </span>
@@ -48,7 +48,7 @@
     import Emitter from '../../mixins/emitter';
     import Locale from '../../mixins/locale';
 
-    const prefixCls = 'ivu-select';
+    const prefixCls = 'ivu4-select';
 
     export default {
         name: 'iSelectHead',

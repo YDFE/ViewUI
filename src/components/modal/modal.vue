@@ -42,7 +42,7 @@
 
     import { transferIndex as modalIndex, transferIncrease as modalIncrease } from '../../utils/transfer-queue';
 
-    const prefixCls = 'ivu-modal';
+    const prefixCls = 'ivu4-modal';
 
     export default {
         name: 'Modal',
@@ -255,7 +255,7 @@
                     this.isMouseTriggerIn = false;
                     return;
                 }
-                // use indexOf,do not use === ,because ivu-modal-wrap can have other custom className
+                // use indexOf,do not use === ,because ivu4-modal-wrap can have other custom className
                 const className = event.target.getAttribute('class');
                 if (className && className.indexOf(`${prefixCls}-wrap`) > -1) this.handleMask();
             },

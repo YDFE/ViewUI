@@ -38,8 +38,8 @@
     import Emitter from '../../mixins/emitter';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-input-number';
-    const iconPrefixCls = 'ivu-icon';
+    const prefixCls = 'ivu4-input-number';
+    const iconPrefixCls = 'ivu4-icon';
 
     function addNum (num1, num2) {
         let sq1, sq2, m;

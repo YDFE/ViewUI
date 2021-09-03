@@ -7,7 +7,7 @@
             <transition :name="'move-' + placement">
                 <div :class="classes" :style="mainStyles" v-show="visible">
                     <div :class="contentClasses" ref="content">
-                        <a class="ivu-drawer-close" v-if="closable" @click="close">
+                        <a class="ivu4-drawer-close" v-if="closable" @click="close">
                             <slot name="close">
                                 <Icon type="ios-close"></Icon>
                             </slot>
@@ -15,10 +15,10 @@
                         <div :class="[prefixCls + '-header']" v-if="showHead"><slot name="header"><div :class="[prefixCls + '-header-inner']">{{ title }}</div></slot></div>
                         <div :class="[prefixCls + '-body']" :style="styles"><slot></slot></div>
                     </div>
-                    <div class="ivu-drawer-drag" :class="{ 'ivu-drawer-drag-left': placement === 'left' }" v-if="draggable" @mousedown="handleTriggerMousedown">
+                    <div class="ivu4-drawer-drag" :class="{ 'ivu4-drawer-drag-left': placement === 'left' }" v-if="draggable" @mousedown="handleTriggerMousedown">
                         <slot name="trigger">
-                            <div class="ivu-drawer-drag-move-trigger">
-                                <div class="ivu-drawer-drag-move-trigger-point">
+                            <div class="ivu4-drawer-drag-move-trigger">
+                                <div class="ivu4-drawer-drag-move-trigger-point">
                                     <i></i><i></i><i></i><i></i><i></i>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
 
     import { on, off } from '../../utils/dom';
 
-    const prefixCls = 'ivu-drawer';
+    const prefixCls = 'ivu4-drawer';
 
     export default {
         name: 'Drawer',
@@ -202,7 +202,7 @@
                 }
             },
             handleWrapClick (event) {
-                // use indexOf,do not use === ,because ivu-modal-wrap can have other custom className
+                // use indexOf,do not use === ,because ivu4-modal-wrap can have other custom className
                 const className = event.target.getAttribute('class');
                 if (className && className.indexOf(`${prefixCls}-wrap`) > -1) this.handleMask();
             },

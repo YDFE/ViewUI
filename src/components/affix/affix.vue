@@ -8,7 +8,7 @@
 </template>
 <script>
     import { on, off } from '../../utils/dom';
-    const prefixCls = 'ivu-affix';
+    const prefixCls = 'ivu4-affix';
 
     function getScroll(target, top) {
         const prop = top ? 'pageYOffset' : 'pageXOffset';

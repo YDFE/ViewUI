@@ -10,7 +10,7 @@
     import mixinsForm from '../../mixins/form';
     import { findComponentUpward } from '../../utils/assist';
 
-    const prefixCls = 'ivu-select-item';
+    const prefixCls = 'ivu4-select-item';
 
     export default {
         name: 'iOption',

@@ -25,7 +25,7 @@
 
     import { transferIndex, transferIncrease } from '../../../utils/transfer-queue';
 
-    const prefixCls = 'ivu-notification';
+    const prefixCls = 'ivu4-notification';
     let seed = 0;
     const now = Date.now();
 

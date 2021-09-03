@@ -4,7 +4,7 @@
         <div :class="[prefixCls + '-head']">
             <div :class="[prefixCls + '-head-inner']">
                 <span v-if="!icon && !$slots.icon && currentStatus !== 'finish' && currentStatus !== 'error'">{{ stepNumber }}</span>
-                <span v-else-if="$slots.icon" class="ivu-steps-icon"><slot name="icon"></slot></span>
+                <span v-else-if="$slots.icon" class="ivu4-steps-icon"><slot name="icon"></slot></span>
                 <span v-else :class="iconClasses"></span>
             </div>
         </div>
@@ -20,8 +20,8 @@
     import Emitter from '../../mixins/emitter';
     import { oneOf } from '../../utils/assist';
 
-    const prefixCls = 'ivu-steps';
-    const iconPrefixCls = 'ivu-icon';
+    const prefixCls = 'ivu4-steps';
+    const iconPrefixCls = 'ivu4-icon';
 
     export default {
         name: 'Step',

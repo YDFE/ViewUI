@@ -25,7 +25,7 @@
     import TransferDom from '../../directives/transfer-dom';
     import { oneOf, findComponentUpward } from '../../utils/assist';
 
-    const prefixCls = 'ivu-dropdown';
+    const prefixCls = 'ivu4-dropdown';
 
     export default {
         name: 'Dropdown',

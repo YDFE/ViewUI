@@ -1,17 +1,17 @@
 <template>
     <div :class="classes">
-        <div class="ivu-list-header" v-if="header || $slots.header"><slot name="header">{{ header }}</slot></div>
-        <div class="ivu-list-container">
-            <ul class="ivu-list-items"><slot></slot></ul>
+        <div class="ivu4-list-header" v-if="header || $slots.header"><slot name="header">{{ header }}</slot></div>
+        <div class="ivu4-list-container">
+            <ul class="ivu4-list-items"><slot></slot></ul>
         </div>
         <Spin v-if="loading" fix size="large"><slot name="spin"></slot></Spin>
-        <div class="ivu-list-footer" v-if="footer || $slots.footer"><slot name="footer">{{ footer }}</slot></div>
+        <div class="ivu4-list-footer" v-if="footer || $slots.footer"><slot name="footer">{{ footer }}</slot></div>
     </div>
 </template>
 <script>
     import { oneOf } from '../../utils/assist';
 
-    const prefixCls = 'ivu-list';
+    const prefixCls = 'ivu4-list';
 
     export default {
         name: 'List',

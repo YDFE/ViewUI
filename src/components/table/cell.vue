@@ -4,18 +4,18 @@
         <template v-if="renderType === 'selection'">
             <Checkbox :value="checked" @click.native.stop="handleClick" @on-change="toggleSelect" :disabled="disabled"></Checkbox>
         </template>
-        <div class="ivu-table-cell-tree-level" v-if="showLevel" :style="treeLevelStyle"></div>
-        <div class="ivu-table-cell-tree" :class="{ 'ivu-table-cell-tree-loading': childrenLoading }" v-if="showChildren" @click.prevent.stop="handleToggleTree">
-            <Icon type="ios-loading" v-if="childrenLoading" class="ivu-load-loop" />
+        <div class="ivu4-table-cell-tree-level" v-if="showLevel" :style="treeLevelStyle"></div>
+        <div class="ivu4-table-cell-tree" :class="{ 'ivu4-table-cell-tree-loading': childrenLoading }" v-if="showChildren" @click.prevent.stop="handleToggleTree">
+            <Icon type="ios-loading" v-if="childrenLoading" class="ivu4-load-loop" />
             <Icon type="ios-add" v-else-if="!childrenExpand" />
             <Icon type="ios-remove" v-else />
         </div>
-        <div class="ivu-table-cell-tree ivu-table-cell-tree-empty" v-else-if="showTreeNode"></div>
+        <div class="ivu4-table-cell-tree ivu4-table-cell-tree-empty" v-else-if="showTreeNode"></div>
         <template v-if="renderType === 'html'"><span v-html="row[column.key]"></span></template>
         <template v-if="renderType === 'normal'">
             <template v-if="column.tooltip">
-                <Tooltip transfer :content="row[column.key]" :theme="tableRoot.tooltipTheme" :disabled="!showTooltip && !tooltipShow" :max-width="300" class="ivu-table-cell-tooltip" @on-popper-show="handleTooltipShow" @on-popper-hide="handleTooltipHide">
-                    <span ref="content" @mouseenter="handleTooltipIn" @mouseleave="handleTooltipOut" class="ivu-table-cell-tooltip-content">{{ row[column.key] }}</span>
+                <Tooltip transfer :content="row[column.key]" :theme="tableRoot.tooltipTheme" :disabled="!showTooltip && !tooltipShow" :max-width="300" class="ivu4-table-cell-tooltip" @on-popper-show="handleTooltipShow" @on-popper-hide="handleTooltipHide">
+                    <span ref="content" @mouseenter="handleTooltipIn" @mouseleave="handleTooltipOut" class="ivu4-table-cell-tooltip-content">{{ row[column.key] }}</span>
                 </Tooltip>
             </template>
             <span v-else>{{row[column.key]}}</span>

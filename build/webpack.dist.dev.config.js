@@ -15,7 +15,7 @@ module.exports = merge(webpackBaseConfig, {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
         filename: 'iview.js',
-        library: 'iview',
+        library: 'iview4',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },

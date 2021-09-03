@@ -29,7 +29,7 @@
     import { getStyle, oneOf } from '../../utils/assist';
     import { on, off } from '../../utils/dom';
 
-    const prefixCls = 'ivu-carousel';
+    const prefixCls = 'ivu4-carousel';
 
     export default {
         name: 'Carousel',

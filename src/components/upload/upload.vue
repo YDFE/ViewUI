@@ -31,7 +31,7 @@
     import Emitter from '../../mixins/emitter';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-upload';
+    const prefixCls = 'ivu4-upload';
 
     export default {
         name: 'Upload',

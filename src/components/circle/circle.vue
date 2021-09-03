@@ -19,7 +19,7 @@
     import { oneOf } from '../../utils/assist';
     import random from '../../utils/random_str';
 
-    const prefixCls = 'ivu-chart-circle';
+    const prefixCls = 'ivu4-chart-circle';
 
     export default {
         name: 'iCircle',
@@ -61,7 +61,7 @@
         },
         data () {
             return {
-                id: `ivu-chart-circle-${random(3)}`
+                id: `ivu4-chart-circle-${random(3)}`
             };
         },
         computed: {

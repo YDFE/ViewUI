@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
 
-    .ivu-modal{
+    .ivu4-modal{
         top: 0;
     }
     }

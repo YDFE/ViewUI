@@ -18,7 +18,7 @@
     import Emitter from '../../mixins/emitter';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-switch';
+    const prefixCls = 'ivu4-switch';
 
     export default {
         name: 'iSwitch',
