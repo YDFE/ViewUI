@@ -30366,7 +30366,10 @@ var components = {
     I4Upload: _upload2.default
 };
 
-var iview = (0, _extends3.default)({}, components);
+var iview = (0, _extends3.default)({}, components, {
+    I4Circle: _circle2.default,
+    I4Switch: _switch2.default
+});
 
 var install = function install(Vue) {
     var _this = this;
@@ -30452,7 +30455,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 var API = (0, _extends3.default)({
-    version: '4.1.3-yd.1',
+    version: '4.1.3-yd.3',
     locale: _index2.default.use,
     i18n: _index2.default.i18n,
     install: install,

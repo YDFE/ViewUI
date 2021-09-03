@@ -143,7 +143,9 @@ const components = {
 };
 
 const iview = {
-    ...components
+    ...components,
+    I4Circle: Circle,
+    I4Switch: Switch
 };
 
 const install = function(Vue, opts = {}) {
