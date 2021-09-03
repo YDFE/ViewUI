@@ -11,6 +11,9 @@
 - 将类名前缀由`ivu4-`改为`ivu4-`、由`ivu4-icon`改为`ivu4-icon`，要使用icon的使用注意使用ivu4-icon，覆盖iview样式的时候也要注意类名(与原版的类名不一样了)
 - Select组件中判断是否Option的正则改为`optionRegexp = /^i-option$|^Option$|^i4-option$|^I4Option$/i`
 
+### 4.1.3-yd.2
+- Select: showNotFoundLabel ignore remote prop
+
 > 以下是原文档
 
 <p align="center">
