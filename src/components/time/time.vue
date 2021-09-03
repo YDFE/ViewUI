@@ -8,7 +8,7 @@
     import Locale from '../../mixins/locale';
     import Time from './time';
 
-    const prefixCls = 'ivu-time';
+    const prefixCls = 'ivu4-time';
 
     export default {
         name: 'Time',

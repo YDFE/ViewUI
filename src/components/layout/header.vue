@@ -2,7 +2,7 @@
     <div :class="wrapClasses"><slot></slot></div>
 </template>
 <script>
-    const prefixCls = 'ivu-layout';
+    const prefixCls = 'ivu4-layout';
     export default {
         name: 'Header',
         computed: {

@@ -71,11 +71,11 @@ export declare class Modal extends Vue {
      */
     "footer-hide"?: boolean;
     /**
-     * 设置浮层样式，调整浮层位置等，该属性设置的是.ivu-modal的样式
+     * 设置浮层样式，调整浮层位置等，该属性设置的是.ivu4-modal的样式
      */
     style?: object;
     /**
-     * 设置对话框容器.ivu-modal-wrap的类名，可辅助实现垂直居中等自定义效果
+     * 设置对话框容器.ivu4-modal-wrap的类名，可辅助实现垂直居中等自定义效果
      */
     "class-name"?: string;
     /**

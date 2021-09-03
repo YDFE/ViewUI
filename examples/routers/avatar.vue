@@ -31,7 +31,7 @@
             </Badge>
         </div>
         <br><br><br>
-        <Avatar custom-icon="ivu-icon-ios-person" />
+        <Avatar custom-icon="ivu4-icon-ios-person" />
 
         <Avatar :src="src" size="large" @on-error="handleError" />
         <Divider></Divider>

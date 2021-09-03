@@ -6,7 +6,7 @@
 <script>
     import { oneOf, findComponentDownward, findBrothersComponents } from '../../utils/assist';
 
-    const prefixCls = 'ivu-row';
+    const prefixCls = 'ivu4-row';
 
     export default {
         name: 'Row',

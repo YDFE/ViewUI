@@ -89,8 +89,8 @@
 
     import { siblingMonth, formatDateLabels } from '../../util';
 
-    const prefixCls = 'ivu-picker-panel';
-    const datePrefixCls = 'ivu-date-picker';
+    const prefixCls = 'ivu4-picker-panel';
+    const datePrefixCls = 'ivu4-date-picker';
 
     export default {
         name: 'DatePickerPanel',

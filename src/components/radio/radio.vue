@@ -19,7 +19,7 @@
     import Emitter from '../../mixins/emitter';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-radio';
+    const prefixCls = 'ivu4-radio';
 
     export default {
         name: 'Radio',

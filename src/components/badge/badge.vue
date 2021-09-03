@@ -3,9 +3,9 @@
         <slot></slot>
         <sup :class="dotClasses" :style="styles" v-show="badge"></sup>
     </span>
-    <span v-else-if="status || color" :class="classes" class="ivu-badge-status" ref="badge">
+    <span v-else-if="status || color" :class="classes" class="ivu4-badge-status" ref="badge">
         <span :class="statusClasses" :style="statusStyles"></span>
-        <span class="ivu-badge-status-text"><slot name="text">{{ text }}</slot></span>
+        <span class="ivu4-badge-status-text"><slot name="text">{{ text }}</slot></span>
     </span>
     <span v-else :class="classes" ref="badge">
         <slot></slot>
@@ -16,7 +16,7 @@
 <script>
     import { oneOf } from '../../utils/assist';
     const initColorList = ['blue', 'green', 'red', 'yellow', 'pink', 'magenta', 'volcano', 'orange', 'gold', 'lime', 'cyan', 'geekblue', 'purple'];
-    const prefixCls = 'ivu-badge';
+    const prefixCls = 'ivu4-badge';
 
     export default {
         name: 'Badge',

@@ -123,7 +123,7 @@
             <div :class="[prefixCls + '-fixed-right-header']" :style="fixedRightHeaderStyle" v-if="isRightFixed"></div>
             <div :class="[prefixCls + '-footer']" v-if="showSlotFooter" ref="footer"><slot name="footer"></slot></div>
         </div>
-        <div class="ivu-table-resize-line" v-show="showResizeLine" ref="resizeLine"></div>
+        <div class="ivu4-table-resize-line" v-show="showResizeLine" ref="resizeLine"></div>
         <Spin fix size="large" v-if="loading">
             <slot name="loading"></slot>
         </Spin>
@@ -142,7 +142,7 @@
     import elementResizeDetectorMaker from 'element-resize-detector';
     import { getAllColumns, convertToRows, convertColumnOrder, getRandomStr } from './util';
 
-    const prefixCls = 'ivu-table';
+    const prefixCls = 'ivu4-table';
 
     let rowKey = 1;
     let columnKey = 1;

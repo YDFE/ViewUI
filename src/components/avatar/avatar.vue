@@ -9,7 +9,7 @@
     import Icon from '../icon';
     import { oneOf } from '../../utils/assist';
 
-    const prefixCls = 'ivu-avatar';
+    const prefixCls = 'ivu4-avatar';
 
     const sizeList = ['small', 'large', 'default'];
 

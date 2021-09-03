@@ -1,5 +1,5 @@
 <template>
-    <div class="ivu-select-dropdown" :class="className" :style="styles"><slot></slot></div>
+    <div class="ivu4-select-dropdown" :class="className" :style="styles"><slot></slot></div>
 </template>
 <script>
     import Vue from 'vue';

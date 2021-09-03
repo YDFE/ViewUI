@@ -1,3 +1,18 @@
+# 基于iview v4.1.3改造的组件库
+
+> 注意：使用node v8.1.4运行打包
+## 修改日志
+### 4.1.3-yd.1
+因为项目之前引入了iview 2.0.0版本有很多bug，但由于直接替换会有一些之前为了解决BUG的hack方法导致次生BUG，因此进行一些修改，以同时引入版本4和版本2，后期全面使用版本4后再移除版本2
+- 将打包出来的包名由`iview`改为`iview4`
+- 全局组件名前缀全部改为`I4ComponentName`，如I4Button
+- 全局API由`$APIName`改名为`$I4APIName`，如$I4Message
+- 全局iview由`$IVIEW`改为`$IVIEW4`
+- 将类名前缀由`ivu4-`改为`ivu4-`、由`ivu4-icon`改为`ivu4-icon`，要使用icon的使用注意使用ivu4-icon，覆盖iview样式的时候也要注意类名(与原版的类名不一样了)
+- Select组件中判断是否Option的正则改为`optionRegexp = /^i-option$|^Option$|^i4-option$|^I4Option$/i`
+
+> 以下是原文档
+
 <p align="center">
     <a href="https://www.iviewui.com">
         <img width="200" src="https://file.iviewui.com/view-ui-logo-new.svg">

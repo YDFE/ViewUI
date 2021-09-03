@@ -96,8 +96,8 @@
     import SelectHead from './select-head.vue';
     import FunctionalOptions from './functional-options.vue';
 
-    const prefixCls = 'ivu-select';
-    const optionRegexp = /^i-option$|^Option$/i;
+    const prefixCls = 'ivu4-select';
+    const optionRegexp = /^i-option$|^Option$|^i4-option$|^I4Option$/i;
     const optionGroupRegexp = /option-?group/i;
 
     const findChild = (instance, checkFn) => {
@@ -327,7 +327,7 @@
                 return {
                     [prefixCls + '-dropdown-transfer']: this.transfer,
                     [prefixCls + '-multiple']: this.multiple && this.transfer,
-                    ['ivu-auto-complete']: this.autoComplete,
+                    ['ivu4-auto-complete']: this.autoComplete,
                     [this.transferClassName]: this.transferClassName
                 };
             },

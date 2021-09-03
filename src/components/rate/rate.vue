@@ -33,7 +33,7 @@
 
     import Icon from '../icon/icon.vue';
 
-    const prefixCls = 'ivu-rate';
+    const prefixCls = 'ivu4-rate';
 
     export default {
         name: 'Rate',
@@ -100,9 +100,9 @@
             },
             iconClasses () {
                 return [
-                    'ivu-icon',
+                    'ivu4-icon',
                     {
-                        [`ivu-icon-${this.icon}`]: this.icon !== '',
+                        [`ivu4-icon-${this.icon}`]: this.icon !== '',
                         [`${this.customIcon}`]: this.customIcon !== '',
                     }
                 ];

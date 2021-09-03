@@ -50,7 +50,7 @@
         margin: 0 auto;
     }
 
-    .ivu-scroll-container {
+    .ivu4-scroll-container {
         height: 500px;
     }
 </style>

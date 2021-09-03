@@ -65,8 +65,8 @@
     import Locale from '../../mixins/locale';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-cascader';
-    const selectPrefixCls = 'ivu-select';
+    const prefixCls = 'ivu4-cascader';
+    const selectPrefixCls = 'ivu4-select';
 
     export default {
         name: 'Cascader',

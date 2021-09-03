@@ -1,7 +1,7 @@
 import Notification from '../base/notification';
 
-const prefixCls = 'ivu-message';
-const iconPrefixCls = 'ivu-icon';
+const prefixCls = 'ivu4-message';
+const iconPrefixCls = 'ivu4-icon';
 const prefixKey = 'ivu_message_key_';
 
 const defaults = {
@@ -35,7 +35,7 @@ function notice (content = '', duration = defaults.duration, type, onClose = fun
     const iconType = iconTypes[type];
 
     // if loading
-    const loadCls = type === 'loading' ? ' ivu-load-loop' : '';
+    const loadCls = type === 'loading' ? ' ivu4-load-loop' : '';
 
     let instance = getMessageInstance();
 
@@ -105,6 +105,6 @@ export default {
     destroy () {
         let instance = getMessageInstance();
         messageInstance = null;
-        instance.destroy('ivu-message');
+        instance.destroy('ivu4-message');
     }
 };

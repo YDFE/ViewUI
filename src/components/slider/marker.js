@@ -9,7 +9,7 @@ export default {
         let label = typeof this.mark === 'string' ? this.mark : [this.mark.label];
 
         return h('div', {
-            class: 'ivu-slider-marks-item',
+            class: 'ivu4-slider-marks-item',
             style: this.mark.style || {}
         }, label);
     }

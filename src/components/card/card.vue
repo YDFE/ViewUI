@@ -11,7 +11,7 @@
     </component>
 </template>
 <script>
-    const prefixCls = 'ivu-card';
+    const prefixCls = 'ivu4-card';
     const defaultPadding = 16;
     import Icon from '../icon/icon.vue';
     import mixinsLink from '../../mixins/link';

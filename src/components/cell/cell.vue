@@ -4,7 +4,7 @@
             v-if="to"
             :href="linkUrl"
             :target="target"
-            class="ivu-cell-link"
+            class="ivu4-cell-link"
             @click.exact="handleClickItem($event, false)"
             @click.ctrl="handleClickItem($event, true)"
             @click.meta="handleClickItem($event, true)">
@@ -15,7 +15,7 @@
                 <slot name="label" slot="label"></slot>
             </CellItem>
         </a>
-        <div class="ivu-cell-link" v-else @click="handleClickItem">
+        <div class="ivu4-cell-link" v-else @click="handleClickItem">
             <CellItem :title="title" :label="label" :extra="extra">
                 <slot name="icon" slot="icon"></slot>
                 <slot slot="default"></slot>
@@ -23,7 +23,7 @@
                 <slot name="label" slot="label"></slot>
             </CellItem>
         </div>
-        <div class="ivu-cell-arrow" v-if="to">
+        <div class="ivu4-cell-arrow" v-if="to">
             <slot name="arrow">
                 <Icon :type="arrowType" :custom="customArrowType" :size="arrowSize" />
             </slot>
@@ -35,7 +35,7 @@
     import Icon from '../icon/icon.vue';
     import mixinsLink from '../../mixins/link';
 
-    const prefixCls = 'ivu-cell';
+    const prefixCls = 'ivu4-cell';
 
     export default {
         name: 'Cell',

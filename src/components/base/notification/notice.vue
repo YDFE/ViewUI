@@ -9,7 +9,7 @@
                     ></render-cell>
                 </div>
                 <a :class="[baseClass + '-close']" @click="close" v-if="closable">
-                    <i class="ivu-icon ivu-icon-ios-close"></i>
+                    <i class="ivu4-icon ivu4-icon-ios-close"></i>
                 </a>
             </template>
             <template v-if="type === 'message'">
@@ -21,7 +21,7 @@
                         ></render-cell>
                     </div>
                     <a :class="[baseClass + '-close']" @click="close" v-if="closable">
-                        <i class="ivu-icon ivu-icon-ios-close"></i>
+                        <i class="ivu4-icon ivu4-icon-ios-close"></i>
                     </a>
                 </div>
             </template>
@@ -159,7 +159,7 @@
             handleLeave (el) {
                 if (this.type === 'message') {
                     // 优化一下，如果当前只有一个 Message，则不使用 js 过渡动画，这样更优美
-                    if (document.getElementsByClassName('ivu-message-notice').length !== 1) {
+                    if (document.getElementsByClassName('ivu4-message-notice').length !== 1) {
                         el.style.height = 0;
                         el.style.paddingTop = 0;
                         el.style.paddingBottom = 0;
@@ -177,7 +177,7 @@
             }
 
             // check if with desc in Notice component
-            if (this.prefixCls === 'ivu-notice') {
+            if (this.prefixCls === 'ivu4-notice') {
                 let desc = this.$refs.content.querySelectorAll(`.${this.prefixCls}-desc`)[0];
                 this.withDesc = this.render ? true : (desc ? desc.innerHTML !== '' : false);
             }

@@ -32,7 +32,7 @@
     import Emitter from '../../mixins/emitter';
     import mixinsForm from '../../mixins/form';
 
-    const prefixCls = 'ivu-checkbox';
+    const prefixCls = 'ivu4-checkbox';
 
     export default {
         name: 'Checkbox',

@@ -35,7 +35,7 @@
                     :style="{ 'left': item.position + '%' }"
                     @click.self="sliderClick"
                 ></div>
-                <div class="ivu-slider-marks">
+                <div class="ivu4-slider-marks">
                     <SliderMarker
                         v-for="(item, key) in markList"
                         :key="key"
@@ -108,7 +108,7 @@
     import mixinsForm from '../../mixins/form';
     import elementResizeDetectorMaker from 'element-resize-detector';
 
-    const prefixCls = 'ivu-slider';
+    const prefixCls = 'ivu4-slider';
 
     export default {
         name: 'Slider',
